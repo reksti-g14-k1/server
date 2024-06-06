@@ -13,8 +13,8 @@ app.use(express.json());
 
 app.use('/', authRoute);
 app.use('/api', authMiddleware, productRoute);
-app.use('/api', transactionRoute);
+app.use('/api', authMiddleware, transactionRoute);
 
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(3000, () => {
     console.log(`Server is running on port ${server.address().port}`);
 })
