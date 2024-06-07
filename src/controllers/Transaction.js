@@ -7,9 +7,9 @@ import Transaction from "../model/Transaction.js";
 const db = getFirestore(firebase);
 
 export const createTransaction = async (req, res) => {
-    const { items, status, price } = req.body;
+    const { items, status, price, customerId } = req.body;
     const id = nanoid(10);
-    const transaction = new Transaction(items, status, price)
+    const transaction = new Transaction(items, status, price, customerId)
 
     if (!Array.isArray(items)) {
         items = [];
