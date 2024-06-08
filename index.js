@@ -1,9 +1,9 @@
 import express from "express"
-import authRoute from "./routes/authRoute.js"
-import productRoute from "./routes/productRoute.js"
-import transactionRoute from "./routes/transactionRoute.js"
+import authRoute from "./src/routes/authRoute.js"
+import productRoute from "./src/routes/productRoute.js"
+import transactionRoute from "./src/routes/transactionRoute.js"
 
-import { authMiddleware } from "./middleware/auth.js";
+import { authMiddleware } from "./src/middleware/auth.js";
 
 const app = express();
 
