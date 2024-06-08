@@ -1,4 +1,5 @@
 import express from "express"
+import cors from "cors"
 import authRoute from "./src/routes/authRoute.js"
 import productRoute from "./src/routes/productRoute.js"
 import transactionRoute from "./src/routes/transactionRoute.js"
@@ -8,6 +9,7 @@ import { authMiddleware } from "./src/middleware/auth.js";
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.use('/', authRoute);
 app.use('/api', authMiddleware, productRoute);
