@@ -8,8 +8,15 @@ import { authMiddleware } from "./src/middleware/auth.js";
 
 const app = express();
 
+app.use(cors(
+    {
+        origin: '*',
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+        allowedHeaders: ['Content-Type', 'Authorization'],
+        optionsSuccessStatus: 200
+    }
+));
 app.use(express.json());
-app.use(cors());
 
 app.use('/', authRoute);
 app.use('/api', authMiddleware, productRoute);
