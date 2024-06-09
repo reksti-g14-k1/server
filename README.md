@@ -4,7 +4,19 @@ Berikut adalah tata cara menggunakan web service. Web service ini sudah dalam ta
 
 Link Deployment : https://server-reksti-production.up.railway.app
 
-
+Atau bisa juga dijalankan melalui localhost, caranya :
+##### 1. Clone Repository ini
+```
+https://github.com/reksti-g14-k1/server.git
+```
+##### 2. Install dependencies. Buka folder yang sudah diclone lalu jalankan perintah berikut di CMD
+```
+npm install
+```
+##### 3. Jalankan di localhost dengan menjalankan perintah berikut di CMD
+```
+npm run start
+```
 
 ## API Reference
 
