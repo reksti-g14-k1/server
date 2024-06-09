@@ -7,13 +7,17 @@ Link Deployment : https://server-reksti-production.up.railway.app
 Atau bisa juga dijalankan melalui localhost, caranya :
 ##### 1. Clone Repository ini
 ```
-https://github.com/reksti-g14-k1/server.git
+git clone https://github.com/reksti-g14-k1/server.git
 ```
-##### 2. Install dependencies. Buka folder yang sudah diclone lalu jalankan perintah berikut di CMD
+##### 2. Pindah ke folder repository yang sudah diclone
+```
+cd .\server
+```
+##### 3. Install dependencies. Buka folder yang sudah diclone lalu jalankan perintah berikut di CMD
 ```
 npm install
 ```
-##### 3. Jalankan di localhost dengan menjalankan perintah berikut di CMD
+##### 4. Jalankan di localhost dengan menjalankan perintah berikut di CMD
 ```
 npm run start
 ```
